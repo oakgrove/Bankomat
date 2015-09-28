@@ -32,4 +32,5 @@ namespace Bankomat.DAL
             //students.ForEach(s => context.Students.AddOrUpdate(p => p.LastName, s));
             //context.SaveChanges();
         }
+    }
 }
