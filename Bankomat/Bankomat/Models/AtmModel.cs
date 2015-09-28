@@ -7,6 +7,8 @@ namespace Bankomat.Models
 { // ID, LIST pengar LIST receipt
     public class AtmModel
     {   
-        public int MyProperty { get; set; }
-    }
+        public int Id { get; set; }
+        public  List <Money> { get; set; }
+    public List <Receipt> { get; set; }
+}
 }
