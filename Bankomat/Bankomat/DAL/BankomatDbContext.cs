@@ -14,7 +14,6 @@ namespace Bankomat.DAL
          
         public DbSet<Money> Money { get; set; }
 
-        public DbSet<UserModels> Users { get; set; }
         public DbSet<BankAccount> Accounts { get; set; }
         public DbSet<Receipt> Receipts { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
@@ -29,6 +28,5 @@ namespace Bankomat.DAL
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 
-        public System.Data.Entity.DbSet<Bankomat.Models.BankAccount> AccountModels { get; set; }
     }
 }
