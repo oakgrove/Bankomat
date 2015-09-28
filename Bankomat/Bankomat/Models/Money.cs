@@ -9,7 +9,6 @@ namespace Bankomat.Models
     public class Money
     {
         public int Id { get; set; }
-        [Display(Name = "Valör")]
         public int Denomination { get; set; }
 
     }
