@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
 namespace Bankomat.Models
 {
-    public class ReceiptModels
+    public class Money
     {
         public int Id { get; set; }
-        public double Length { get; set; } = 14;
-        public bool Active { get; set; }
+        [Display(Name = "Valör")]
+        public int Denomination { get; set; }
+
     }
 }

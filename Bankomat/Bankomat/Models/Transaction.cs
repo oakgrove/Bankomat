@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Bankomat.Models
 {
-    public class TransactionModel
+    public class Transaction
     {
         public int Id { get; set; }
         public DateTime TransactionTime { get; set; }
@@ -16,6 +16,6 @@ namespace Bankomat.Models
         public double Balance { get; set; }
         public double Amount { get; set; }
 
-        public AccountModel Account { get; set; }
+        public Account Account { get; set; }
     }
 }

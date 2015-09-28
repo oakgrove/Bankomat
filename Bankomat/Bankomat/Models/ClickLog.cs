@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Bankomat.Models
 {
-    public class ClickLogModels
+    public class ClickLog
     {
         public int Id { get; set; }
         public int UserId { get; set; }

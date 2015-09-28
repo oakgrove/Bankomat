@@ -10,9 +10,9 @@ namespace Bankomat.DAL
 {
     public class BankomatDbContext : DbContext
     {
-        public DbSet<ClickLogModels> ClickLogModels { get; set; }
+        public DbSet<ClickLog> ClickLogModels { get; set; }
          
-        public DbSet<MoneyModel> Money { get; set; }
+        public DbSet<Money> Money { get; set; }
 
         public DbSet<UserModels> User { get; set; }
 
@@ -25,5 +25,7 @@ namespace Bankomat.DAL
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
+
+        public System.Data.Entity.DbSet<Bankomat.Models.Account> AccountModels { get; set; }
     }
 }
