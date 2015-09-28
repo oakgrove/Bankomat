@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Bankomat.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Bankomat.Models
 {
     public class AccountModel
     {
+       
         public int Id { get; set; }
         public int UserID { get; set; }
         public int AccountNumber { get; set; }
@@ -15,5 +17,7 @@ namespace Bankomat.Models
         public double Balance { get; set; }
         public List<TransactionModel> Transactions;
 
+        public ApplicationUser User { get; set; }
+        
     }
 }
