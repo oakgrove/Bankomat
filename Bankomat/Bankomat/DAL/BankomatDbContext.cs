@@ -14,6 +14,8 @@ namespace Bankomat.DAL
 
         public DbSet<MoneyModel> Money { get; set; }
 
+        public DbSet<UserModels> User { get; set; }
+
         public BankomatDbContext() : base("Bankomat")
         {
 
