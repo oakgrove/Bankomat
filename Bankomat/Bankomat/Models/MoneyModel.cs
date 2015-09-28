@@ -9,6 +9,6 @@ namespace Bankomat.Models
     {
         public int Id { get; set; }
         public int Denomination { get; set; }
-        public int Test { get; set; }
+
     }
 }
