@@ -13,7 +13,7 @@ namespace Bankomat.Models
         public int AccountNumber { get; set; }
         public string Name { get; set; }
         public double Balance { get; set; }
-        //List<Transaction> Transactions;
+        public List<TransactionModel> Transactions;
 
     }
 }
