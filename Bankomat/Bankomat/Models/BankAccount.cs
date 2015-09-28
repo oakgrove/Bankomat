@@ -12,14 +12,14 @@ namespace Bankomat.Models
     {
         
         public int Id { get; set; }
-        [ForeignKey("UserId")]
+        //[ForeignKey("UserId")]
         public int UserId { get; set; }
         public int AccountNumber { get; set; }
         public string Name { get; set; }
         public double Balance { get; set; }
         public List<Transaction> Transactions;
 
-        public ApplicationUser User { get; set; }
+        //public ApplicationUser User { get; set; }
         
     }
 }
