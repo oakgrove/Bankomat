@@ -10,5 +10,6 @@ namespace Bankomat.Models
         public int Id { get; set; }
         public List<MoneyModel> Money { get; set; }
         public List<ReceiptModel> Receipts { get; set; }
+
     }
 }
