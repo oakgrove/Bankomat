@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Bankomat.Models
 {
-    public class Account
+    public class BankAccount
     {
         
         public int Id { get; set; }

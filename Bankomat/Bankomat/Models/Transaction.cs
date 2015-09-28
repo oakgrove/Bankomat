@@ -16,6 +16,6 @@ namespace Bankomat.Models
         public double Balance { get; set; }
         public double Amount { get; set; }
 
-        public Account Account { get; set; }
+        public BankAccount Account { get; set; }
     }
 }
