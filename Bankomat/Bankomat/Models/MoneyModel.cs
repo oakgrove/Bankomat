@@ -5,10 +5,10 @@ using System.Web;
 
 namespace Bankomat.Models
 {
-    public class ReceiptModels
+    public class MoneyModel
     {
         public int Id { get; set; }
-        public double Length { get; set; } = 14;
-        public bool Active { get; set; }
+        public int Denomination { get; set; }
+        public int Test { get; set; }
     }
 }
