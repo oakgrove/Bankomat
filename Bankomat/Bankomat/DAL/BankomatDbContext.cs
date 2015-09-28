@@ -10,11 +10,14 @@ namespace Bankomat.DAL
 {
     public class BankomatDbContext : DbContext
     {
-        public DbSet<ClickLog> ClickLogModels { get; set; }
+        public DbSet<ClickLog> ClickLogs { get; set; }
          
         public DbSet<Money> Money { get; set; }
 
-        public DbSet<UserModels> User { get; set; }
+        public DbSet<UserModels> Users { get; set; }
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<Receipt> Receipts { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
 
         public BankomatDbContext() : base("Bankomat")
         {
